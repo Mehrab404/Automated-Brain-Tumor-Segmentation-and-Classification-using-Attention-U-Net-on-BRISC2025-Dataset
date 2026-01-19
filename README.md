@@ -1,6 +1,6 @@
-# 🧠 Automated Brain Tumor Segmentation and Classification using Attention U-Net (BRISC2025)
+# Automated Brain Tumor Segmentation and Classification using Attention U-Net (BRISC2025)
 
-## 📌 Project Overview
+## Project Overview
 
 This project implements a multi-task Deep Learning framework for the automated analysis of Brain MRI scans using the **BRISC2025** dataset. It tackles two critical diagnostic challenges:
 
@@ -9,7 +9,7 @@ This project implements a multi-task Deep Learning framework for the automated a
 
 The project demonstrates that integrating **Attention Gates** into the U-Net architecture significantly improves segmentation performance by suppressing irrelevant background noise and focusing on tumor boundaries.
 
-## 📂 Repository Structure
+## Repository Structure
 
 * `Report_Automated Brain Tumor Segmentation and Classification.pdf`: **Project Report**. Includes the project report and its findings.
 * `Exploratory Data Analysis (EDA).ipynb`: **Exploratory Data Analysis**. Includes data loading, pixel intensity distribution analysis, class balance visualization, and sample MRI rendering.
@@ -21,7 +21,7 @@ The project demonstrates that integrating **Attention Gates** into the U-Net arc
 
 
 
-## 🔬 Methodology
+## Methodology
 
 ### 1. Segmentation (Attention U-Net)
 
@@ -36,7 +36,7 @@ We utilize an **Attention U-Net**, which modifies the standard U-Net by adding *
 
 A parallel CNN branch classifies the input MRI slice into one of four categories using a Softmax output layer.
 
-## 📊 Performance Results
+## Performance Results
 
 | Model | Task | Metric | Score |
 | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ A parallel CNN branch classifies the input MRI slice into one of four categories
 * **Pituitary:** 98.94%
 * **No Tumor:** 98.35%
 
-## 🛠️ Installation & Requirements
+## Installation & Requirements
 
 To run this project locally or on Colab, ensure you have the following dependencies:
 
@@ -60,7 +60,7 @@ pip install torch torchvision tensorflow opencv-python matplotlib seaborn scikit
 
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. **Dataset Setup:** The notebook automatically downloads the BRISC2025 dataset via `kagglehub`.
 2. **Run EDA:** Execute `Exploratory Data Analysis (EDA).ipynb` to visualize the dataset and understand class distributions.
